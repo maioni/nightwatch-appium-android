@@ -1,0 +1,29 @@
+// // Wikipedia // npx nightwatch ./nightwatch/examples/mobile-app-tests/wikipedia-android.js --env app.android.emulator
+
+// { 
+//     "appium:browserName": null,
+//     "appium:platformName": "android",
+//     "appium:automationName": "UiAutomator2",
+//     "appium:avd": "nightwatch-android-11",
+//     "appium:app": "/home/popos/Projetos/appium/nightwatch/sample-apps/wikipedia.apk",
+//     "appium:appPackage": "org.wikipedia",
+//     "appium:appActivity": "org.wikipedia.main.MainActivity",
+//     "appium:appWaitActivity": "org.wikipedia.onboarding.InitialOnboardingActivity",
+//     "appium:chromedriverExecutable": "/home/popos/Projetos/appium/chromedriver-mobile/chromedriver",
+//     "appium:newCommandTimeout": 0
+//  }
+
+
+// // Swaglabs // npx nightwatch ./tests/swaglabs-android.js --env app.android.emulator.test
+
+// { 
+//     "appium:browserName": null,
+//     "appium:platformName": "android",
+//     "appium:automationName": "UiAutomator2",
+//     "appium:avd": "nightwatch-android-11",
+//     "appium:app": "/home/popos/Projetos/appium/apks/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
+//     "appium:appPackage": "com.swaglabsmobileapp",
+//     "appium:appActivity": "com.swaglabsmobileapp.MainActivity",
+//     "appium:chromedriverExecutable": "/home/popos/Projetos/appium/chromedriver-mobile/chromedriver",
+//     "appium:newCommandTimeout": 0
+//  }

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="7">
+
+  <testsuite name="test.swaglabs-android"
+    errors="0" failures="0" hostname="" id="" package="swaglabs-android" skipped="0"
+    tests="7" time="160.2" timestamp="">
+  
+    <testcase name="Login with empty user name" classname="test.swaglabs-android" time="2.952" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login with empty password name" classname="test.swaglabs-android" time="11.76" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login with invalid user name" classname="test.swaglabs-android" time="13.34" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login with invalid password" classname="test.swaglabs-android" time="12.26" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login with blocked user" classname="test.swaglabs-android" time="11.47" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Login test" classname="test.swaglabs-android" time="11.99" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Logoff test" classname="test.swaglabs-android" time="16.30" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/popos/Projetos/appium/nightwatch/examples/mobile-app-tests/wikipedia-android.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     1 | describe(&#39;Wikipedia Android app test&#39;, function() {
+     2 |   before(function(app) {
+     3 |     app.click(&#39;id&#39;, &#39;org.wikipedia:id/fragment_onboarding_skip_button&#39;); 
+     4 |   });
+     5 | 
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/popos/Projetos/appium/nightwatch/examples/mobile-app-tests/wikipedia-android.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |   it(&#39;Search for BrowserStack&#39;, async function(app) {
+     7 |     app
+     8 |       .click(&#39;id&#39;, &#39;org.wikipedia:id/search_container&#39;) 
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;)
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0})
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/popos/Projetos/appium/nightwatch/examples/mobile-app-tests/wikipedia-android.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |     app
+     8 |       .click(&#39;id&#39;, &#39;org.wikipedia:id/search_container&#39;)
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;) 
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0})
+     11 |       .waitUntil(async function() {
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/popos/Projetos/appium/nightwatch/examples/mobile-app-tests/wikipedia-android.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     8 |       .click(&#39;id&#39;, &#39;org.wikipedia:id/search_container&#39;)
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;)
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0}) 
+     11 |       .waitUntil(async function() {
+     12 |         // wait for webview context to be available
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ TimeoutError
+   Wait timed out after 5080ms
+ TimeoutError
+   Error while running &#34;waitUntil&#34; command: [TimeoutError] Wait timed out after 5080ms
+
+    Error location:
+    /home/popos/Projetos/appium/nightwatch/examples/mobile-app-tests/wikipedia-android.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     9 |       .sendKeys(&#39;id&#39;, &#39;org.wikipedia:id/search_src_text&#39;, &#39;browserstack&#39;)
+     10 |       .click({selector: &#39;org.wikipedia:id/page_list_item_title&#39;, locateStrategy: &#39;id&#39;, index: 0})
+     11 |       .waitUntil(async function() { 
+     12 |         // wait for webview context to be available
+     13 |         const contexts = await this.appium.getContexts();
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
