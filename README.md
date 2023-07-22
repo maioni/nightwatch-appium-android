@@ -1,5 +1,5 @@
 # nightwatch-appium-android
-example of a nightwatch project to run test automation for mobile android
+Example of a nightwatch project to run test automation for mobile android
 
 # install java JDK
 
@@ -84,3 +84,22 @@ Saucelabs - sample-app-mobile
 wget https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
 wget https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/iOS.RealDevice.SauceLabs.Mobile.Sample.app.2.7.1.ipa
 ```
+
+# How to setup and guide about this material
+- Medium: https://medium.com/@dmaioni
+
+- Presentation : https://tome.app/qa-609/automating-android-testing-with-appium-and-nightwatch-on-linux-clk92hkht00r4mw5rkf59tvu6
+
+- Java: https://medium.com/@dmaioni/java-installing-it-8c10f361f4c8
+
+- Android: https://medium.com/@dmaioni/android-studio-62ab2f54911c
+
+- Node: https://medium.com/@dmaioni/nodejs-install-c4460b1083d3
+
+- Nightwatch: https://medium.com/@dmaioni/nightwatchjs-9a526ea984ad
+
+- Appium: https://medium.com/@dmaioni/appium-server-and-appium-inspector-ff44e25d804    
+
+- Mobile Automation: https://medium.com/@dmaioni/mobile-test-automation-with-nightwatch-and-appium-df95085b041e
+
+Thank you!
