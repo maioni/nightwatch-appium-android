@@ -1,7 +1,7 @@
-# nightwatch-appium-android
+# [nightwatch-appium-android](https://nightwatchjs.org/guide/mobile-app-testing/installation.html)
 Example of a nightwatch project to run test automation for mobile android
 
-# install java JDK
+# install [java JDK](https://openjdk.org/install/)
 
 ```bash
 sudo apt install openjdk-17-jdk
@@ -11,7 +11,7 @@ export JAVA_HOME=/usr/lib/jvm/java-in-use
 export PATH=$PATH:$JAVA_HOME/bin
 source ~/.bashrc
 ```
-# install android instudio
+# install [android studio](https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio)
 
 ```bash
 ./opt/android-studio/bin/studio.sh
@@ -27,7 +27,7 @@ adb devices
 emulator -list-avds
 emulator @nightwatch-android-11
 ```
-# install node.js and npm
+# install [node.js and npm](https://nodejs.org)
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -36,7 +36,7 @@ nvm install node
 nvm use node
 nvm install-latest-npm
 ```
-# install appium v2
+# install [appium v2](https://appium.io/docs/en/2.0/intro/)
 
 ```bash
 npm i -g appium
@@ -44,7 +44,7 @@ appium driver install uiautomator2
 appium server -p 4723 -a localhost -pa /
 ```
 
-# install appium inspector
+# install [appium inspector](https://github.com/appium/appium-inspector/releases)
 
 ```bash
 wget https://github.com/appium/appium-inspector/releases/download/v2023.7.1/Appium-Inspector-linux-2023.7.1.AppImage
@@ -52,7 +52,7 @@ chmod +x Appium-Inspector-linux-*.AppImage
 ./Appium-Inspector-linux-*.AppImage
 ```
 
-#  ~/.bashrc
+#  [~/.bashrc](./../../.bashrc)
 ```bash
 # variables
 export JAVA_HOME=/usr/lib/jvm/java-in-use # JAVA_HOME
@@ -73,19 +73,22 @@ npm run test
 ```
 
 # APKS / IPAS
-Sauce Labs - my-demo-app-rn
+[Sauce Labs - my-demo-app-rn](https://github.com/saucelabs/my-demo-app-rn/releases)
 ```bash
 wget https://github.com/saucelabs/my-demo-app-rn/releases/download/v1.3.0/Android-MyDemoAppRN.1.3.0.build-244.apk
 wget https://github.com/saucelabs/my-demo-app-rn/releases/download/v1.3.0/iOS-Real-Device-MyRNDemoApp.1.3.0-162.ipa
 ```
 
-Saucelabs - sample-app-mobile
+[Saucelabs - sample-app-mobile](https://github.com/saucelabs/sample-app-mobile/releases)
 ```bash
 wget https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
 wget https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/iOS.RealDevice.SauceLabs.Mobile.Sample.app.2.7.1.ipa
 ```
 
 # How to setup and guide about this material
+
+- This project: https://github.com/maioni/nightwatch-appium-android
+
 - Medium: https://medium.com/@dmaioni
 
 - Presentation : https://tome.app/qa-609/automating-android-testing-with-appium-and-nightwatch-on-linux-clk92hkht00r4mw5rkf59tvu6
