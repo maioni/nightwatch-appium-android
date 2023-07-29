@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="wdiodemoapp.swipe-scroll"
+    errors="0" failures="0" hostname="" id="" package="wdiodemoapp" skipped="0"
+    tests="1" time="220.2" timestamp="">
+  
+    <testcase name="Swipe test" classname="wdiodemoapp.swipe-scroll" time="110.1" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
