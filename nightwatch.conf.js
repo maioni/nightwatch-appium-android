@@ -88,7 +88,7 @@ module.exports = {
       }
     },
 
-    'app.android.emulator.test': {
+    'app.android.emulator.swaglabsmobileapp': {
       extends: 'app',
       'desiredCapabilities': {
         // More capabilities can be found at https://github.com/appium/appium-uiautomator2-driver#capabilities
@@ -103,13 +103,41 @@ module.exports = {
           avd: 'nightwatch-android-11',
           // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
-          //app: `${__dirname}/apks/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk`,
+          app: `${__dirname}/apks/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk`,
           appPackage: 'com.swaglabsmobileapp',
           appActivity: 'com.swaglabsmobileapp.MainActivity',
           // appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
           // chromedriver executable to use for testing web-views in hybrid apps
           chromedriverExecutable: `${__dirname}/chromedriver-mobile/chromedriver`,
-          newCommandTimeout: 0
+          newCommandTimeout: 0,
+          headless : false
+        }
+      }
+    },
+
+    'app.android.emulator.wdiodemoapp': {
+      extends: 'app',
+      'desiredCapabilities': {
+        // More capabilities can be found at https://github.com/appium/appium-uiautomator2-driver#capabilities
+        browserName: null,
+        platformName: 'android',
+        // `appium:options` is not natively supported in Appium v1, but works with Nightwatch.
+        // If copying these capabilities elsewhere while using Appium v1, make sure to remove `appium:options`
+        // and add `appium:` prefix to each one of its capabilities, e.g. change 'app' to 'appium:app'.
+        'appium:options': {
+          automationName: 'UiAutomator2',
+          // Android Virtual Device to run tests on
+          avd: 'nightwatch-android-11',
+          // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
+          // Appium v2 does not support relative paths.
+          app: `${__dirname}/apks/Android-NativeDemoApp-0.4.0.apk`,
+          appPackage: 'com.wdiodemoapp',
+          appActivity: 'com.wdiodemoapp.MainActivity',
+          // appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
+          // chromedriver executable to use for testing web-views in hybrid apps
+          chromedriverExecutable: `${__dirname}/chromedriver-mobile/chromedriver`,
+          newCommandTimeout: 0,
+          headless : false
         }
       }
     },

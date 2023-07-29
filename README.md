@@ -85,6 +85,11 @@ wget https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/Andr
 wget https://github.com/saucelabs/sample-app-mobile/releases/download/2.7.1/iOS.RealDevice.SauceLabs.Mobile.Sample.app.2.7.1.ipa
 ```
 
+[Webdriverio - native-demo-app](https://github.com/webdriverio/native-demo-app/releases)
+```bash
+wget https://github.com/webdriverio/native-demo-app/releases/download/v0.4.0/Android-NativeDemoApp-0.4.0.apk
+```
+
 # How to setup and guide about this material
 
 - This project: https://github.com/maioni/nightwatch-appium-android

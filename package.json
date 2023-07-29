@@ -1,11 +1,15 @@
 {
   "scripts": {
-    "test": "nightwatch -c ./nightwatch.conf.js --env app.android.emulator.test"
+    "test": "nightwatch -c ./nightwatch.conf.js --tag login --env app.android.emulator.swaglabsmobileapp",
+    "debug": "nightwatch -c ./nightwatch.conf.js --tag login --env app.android.emulator.swaglabsmobileapp --debug",
+    "swaglabsmobileapp": "nightwatch -c ./nightwatch.conf.js --tag swaglabsmobileapp --env app.android.emulator.swaglabsmobileapp",
+    "swaglabsmobileapp-debug": "nightwatch -c ./nightwatch.conf.js --tag swaglabsmobileapp-debug --env app.android.emulator.swaglabsmobileapp --debug",
+    "wdiodemoapp": "nightwatch -c ./nightwatch.conf.js  --tag wdiodemoapp --env app.android.emulator.wdiodemoapp",
+    "wdiodemoapp-debug": "nightwatch -c ./nightwatch.conf.js  --tag wdiodemoapp-debug --env app.android.emulator.wdiodemoapp --debug"
   },
-
   "devDependencies": {
     "@nightwatch/mobile-helper": "^0.1.12",
-    "appium": "^2.0.0",
+    "appium": "^2.0.1",
     "appium-uiautomator2-driver": "^2.29.2",
     "appium-xcuitest-driver": "^4.32.21",
     "chromedriver": "^114.0.2",
