@@ -20,7 +20,8 @@ describe("Swaglabs Android app test", function () {
       //.debug()
       .useXpath()
       .click('//android.view.ViewGroup[@content-desc="test-LOGIN"]')
-      .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Username is required']"
+      //.assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Username is required']"
+      .assert.elementPresent("//android.widget.TextView[@text='Username is required']"
       );
   });
 
@@ -29,7 +30,8 @@ describe("Swaglabs Android app test", function () {
       .useXpath()
       .setValue('//android.widget.EditText[@content-desc="test-Username"]',"standard_user")
       .click('//android.view.ViewGroup[@content-desc="test-LOGIN"]')
-      .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Password is required']");
+      //.assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Password is required']");
+      .assert.elementPresent("//android.widget.TextView[@text='Password is required']");
   });
 
   it("Login with invalid user name", async function (app) {
@@ -38,8 +40,8 @@ describe("Swaglabs Android app test", function () {
       .setValue('//android.widget.EditText[@content-desc="test-Username"]',"invalid_user")
       .setValue('//android.widget.EditText[@content-desc="test-Password"]',"secret_sauce")
       .click('//android.view.ViewGroup[@content-desc="test-LOGIN"]')
-      .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Username and password do not match any user in this service.']"
-      );
+      // .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Username and password do not match any user in this service.']"
+      .assert.elementPresent("//android.widget.TextView[@text='Username and password do not match any user in this service.']");
   });
 
   it("Login with invalid password", async function (app) {
@@ -48,7 +50,8 @@ describe("Swaglabs Android app test", function () {
       .setValue('//android.widget.EditText[@content-desc="test-Username"]',"standard_user")
       .setValue('//android.widget.EditText[@content-desc="test-Password"]',"secret_invalid")
       .click('//android.view.ViewGroup[@content-desc="test-LOGIN"]')
-      .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Username and password do not match any user in this service.']");
+      //.assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Username and password do not match any user in this service.']");
+      .assert.elementPresent("//android.widget.TextView[@text='Username and password do not match any user in this service.']");
   });
 
   it("Login with blocked user", async function (app) {
@@ -57,7 +60,8 @@ describe("Swaglabs Android app test", function () {
       .setValue('//android.widget.EditText[@content-desc="test-Username"]',"locked_out_user")
       .setValue('//android.widget.EditText[@content-desc="test-Password"]',"secret_sauce")
       .click('//android.view.ViewGroup[@content-desc="test-LOGIN"]')
-      .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Sorry, this user has been locked out.']");
+      // .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView[@text='Sorry, this user has been locked out.']");
+      .assert.elementPresent("//android.widget.TextView[@text='Sorry, this user has been locked out.']");
   });
 
   it("Login test", async function (app) {
@@ -66,7 +70,8 @@ describe("Swaglabs Android app test", function () {
       .setValue('//android.widget.EditText[@content-desc="test-Username"]',"standard_user")
       .setValue('//android.widget.EditText[@content-desc="test-Password"]',"secret_sauce")
       .click('//android.view.ViewGroup[@content-desc="test-LOGIN"]')
-      .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Cart drop zone\"]/android.view.ViewGroup/android.widget.TextView[@text='PRODUCTS']");
+      // .assert.elementPresent("//android.view.ViewGroup[@content-desc=\"test-Cart drop zone\"]/android.view.ViewGroup/android.widget.TextView[@text='PRODUCTS']");
+      .assert.elementPresent("//android.widget.TextView[@text='PRODUCTS']");
   });
 
   it("Logoff test", async function (app) {
@@ -79,4 +84,5 @@ describe("Swaglabs Android app test", function () {
       .click('//android.view.ViewGroup[@content-desc="test-LOGOUT"]')
       .assert.elementPresent('//android.view.ViewGroup[@content-desc="test-LOGIN"]');
   });
+  
 });

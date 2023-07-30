@@ -5,7 +5,10 @@
     "swaglabsmobileapp": "nightwatch -c ./nightwatch.conf.js --tag swaglabsmobileapp --env app.android.emulator.swaglabsmobileapp",
     "swaglabsmobileapp-debug": "nightwatch -c ./nightwatch.conf.js --tag swaglabsmobileapp-debug --env app.android.emulator.swaglabsmobileapp --debug",
     "wdiodemoapp": "nightwatch -c ./nightwatch.conf.js  --tag wdiodemoapp --env app.android.emulator.wdiodemoapp",
-    "wdiodemoapp-debug": "nightwatch -c ./nightwatch.conf.js  --tag wdiodemoapp-debug --env app.android.emulator.wdiodemoapp --debug"
+    "wdiodemoapp-debug": "nightwatch -c ./nightwatch.conf.js  --tag wdiodemoapp-debug --env app.android.emulator.wdiodemoapp --debug",
+    "login": "nightwatch -c ./nightwatch.conf.js --tag drag-drop --env app.android.emulator.swaglabsmobileapp",
+    "drag-drop": "nightwatch -c ./nightwatch.conf.js --tag login --env app.android.emulator.wdiodemoapp",
+    "webview": "nightwatch -c ./nightwatch.conf.js --tag webview --env app.android.emulator.swaglabsmobileapp"
   },
   "devDependencies": {
     "@nightwatch/mobile-helper": "^0.1.12",

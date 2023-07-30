@@ -110,7 +110,9 @@ module.exports = {
           // chromedriver executable to use for testing web-views in hybrid apps
           chromedriverExecutable: `${__dirname}/chromedriver-mobile/chromedriver`,
           newCommandTimeout: 0,
-          headless : false
+          headless : false,
+          webviewConnectTimeout : 15000,
+          webviewConnectRetries : 60
         }
       }
     },

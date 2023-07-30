@@ -110,4 +110,12 @@ wget https://github.com/webdriverio/native-demo-app/releases/download/v0.4.0/And
 
 - Mobile Automation: https://medium.com/@dmaioni/mobile-test-automation-with-nightwatch-and-appium-df95085b041e
 
-Thank you!
+- Other Documentations:
+
+    - https://appium.io/docs/en/2.0/quickstart/
+
+     - https://github.com/appium/appium-uiautomator2-driver
+
+     - https://appium.github.io/appium-xcuitest-driver/lastest/
+
+# Thank you!
