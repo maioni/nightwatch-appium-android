@@ -71,7 +71,11 @@ export NVM_DIR=~/.nvm # Node Version Manager
 
 # to run test cases
 ```bash
+nightwatch -c ./nightwatch.conf.js --tag login --env app.android.emulator.swaglabsmobileapp
+OR
 npm run test
+OR
+npm run debug
 ```
 
 # APKS / IPAS
