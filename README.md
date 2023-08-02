@@ -22,10 +22,11 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 alias android='/opt/local/android-studio/bin/studio.sh'
+alias emu="$ANDROID_HOME/tools/emulator"
 source ~/.bashrc
 adb devices
-emulator -list-avds
-emulator @nightwatch-android-11
+emu -list-avds
+emu @nightwatch-android-11
 ```
 # install [node.js and npm](https://nodejs.org)
 
@@ -62,6 +63,7 @@ export GRADLE_HOME=/opt/gradle
 export ANDROID_HOME=~/Android/Sdk # ANDROID_HOME
 export PATH=$GRADLE_HOME/bin:/bin:$MAVEN_HOME/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator
 alias android='/opt/android-studio/bin/studio.sh' # Android Studio Alias
+alias emu="$ANDROID_HOME/tools/emulator" # Abdroid Emulator Alias
 export NVM_DIR=~/.nvm # Node Version Manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -110,9 +112,19 @@ wget https://github.com/webdriverio/native-demo-app/releases/download/v0.4.0/And
 
 - Mobile Automation: https://medium.com/@dmaioni/mobile-test-automation-with-nightwatch-and-appium-df95085b041e
 
+- Native Application Automation: https://medium.com/@dmaioni/nightwatchjs-9a526ea984ad
+
+- Mobile Browser Automation: https://medium.com/@dmaioni/nightwatchjs-for-browser-mobile-testing-54676158de64
+
+- Desktop Browser Automation: https://medium.com/@dmaioni/nightwatchjs-for-browser-desktop-testing-1b350fb8ff23
+
 - Other Documentations:
 
-    - https://appium.io/docs/en/2.0/quickstart/
+     - https://appium.io/docs/en/2.0/quickstart/
+ 
+     - https://nightwatchjs.org/guide/reference/settings.html
+
+     - https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html
 
      - https://github.com/appium/appium-uiautomator2-driver
 
